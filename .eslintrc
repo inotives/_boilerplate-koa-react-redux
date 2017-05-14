@@ -1,0 +1,31 @@
+{
+    "env": {
+        //remove either of the lines below if you don't need it
+        //enable nodejs environment
+        "node": true,
+        //enable browser environment
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "globals": {
+        //place settings for globals here, such as
+        "exampleGlobalVariable": true
+    },
+    "rules": {
+        //enable ESLint rules, such as
+        "eqeqeq": 1
+    },
+    "plugins": [
+        //you can put plugins here
+        "react"
+    ]
+}

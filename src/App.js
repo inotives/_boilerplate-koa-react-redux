@@ -2,14 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
 
-import Counter from './modules/_sample-counter/Counter'
+import MainLayout from './pages-and-layout/MainLayout'
 
 const Root = ({ store }) => {
-  console.log(store)
   return (
     <Provider { ...{ store } } >
 
-        <Counter/>
+        <MainLayout />
 
     </Provider>
   )

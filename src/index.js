@@ -2,13 +2,13 @@ import React from 'react';
 import {render} from 'react-dom';
 
 
-import Root from './Root';
+import App from './App';
 import rootReducer from './reducers';
 import configureStore from './configureStore';
 
 const store = configureStore(rootReducer);
 
 render(
-  <Root {...{ store }} />,
+  <App {...{ store }} />,
   document.getElementById('app')
 );

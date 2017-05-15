@@ -22,7 +22,9 @@
     },
     "rules": {
         //enable ESLint rules, such as
-        "eqeqeq": 1
+        "eqeqeq": 1,
+        "react/jsx-uses-react": 1,
+        "react/jsx-uses-vars": 1
     },
     "plugins": [
         //you can put plugins here

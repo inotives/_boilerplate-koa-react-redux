@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import {connect} from 'react-redux';
 import * as actions from './counterActions'
@@ -14,8 +14,8 @@ export class Counter extends Component {
           { ' ' }
           <span className=""> {counter} </span>
         </h2>
-        <button className="btn btn-default" onClick={(e) => increment()}> + </button>
-        <button className="btn btn-default" onClick={(e) => decrement()}> - </button>
+        <button className="btn btn-default" onClick={() => increment()}> + </button>
+        <button className="btn btn-default" onClick={() => decrement()}> - </button>
       </div>
     )
   }// end render func
@@ -33,7 +33,6 @@ export class Counter extends Component {
     implementing our wrapper around increment; the component doesn't care   */
 
 const mapDispatchToProps = (dispatch) => {
-  console.log(actions)
   return bindActionCreators(actions, dispatch);
 }
 
